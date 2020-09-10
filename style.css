@@ -1,0 +1,468 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  color: #fff;
+  font-family: "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.main-background {
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url(images/flower.jpg);
+  background-size: cover;
+  max-height: 100vh;
+}
+
+.gradient {
+  background: linear-gradient(
+    44deg,
+    rgba(252, 70, 107, 0.6),
+    rgba(63, 94, 251, 0.6)
+  );
+  background-size: 400% 400%;
+  height: 100vh;
+
+  -webkit-animation: gradation 6s ease infinite;
+  -moz-animation: gradation 6s ease infinite;
+  animation: gradation 6s ease infinite;
+}
+@-webkit-keyframes gradation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header .inner {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+header .humberger-wrap {
+  display: none;
+}
+
+header nav {
+  position: relative;
+}
+
+header nav,
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+header nav li {
+  cursor: pointer;
+}
+
+header nav a {
+  line-height: 60px;
+  display: block;
+  height: 60px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.svg-wrapper {
+  position: relative;
+  width: 80%;
+  padding-top: 40%; 
+  margin: auto;
+}
+.svg-wrapper svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.boel {
+  fill-rule: evenodd;
+  stroke-width: 1px;
+  stroke-dasharray: 1425px;
+  stroke-dashoffset: 1425px;
+  animation: anim 4s ease-in 2s forwards;
+  stroke: transparent;
+  fill: transparent;
+}
+@keyframes anim {
+  0% {
+    stroke-dashoffset: 1425px;
+  }
+  30% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+}
+
+
+
+.content-title {
+  padding: 80px 0 30px 0;
+  font-family: "Caveat", cursive;
+}
+.content {
+  padding: 30px 0 30px 0;
+  line-height: 250%;
+  margin-bottom: 30px;
+}
+.linkbtn {
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: 1s;
+  margin: auto;
+}
+.linkbtn:hover {
+  color: #333;
+  background-color: #fff;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+#page_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#page_top i {
+  padding-top: 12px;
+}
+#page_top a {
+  display: block;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #c993ff;
+  color: #fff;
+  text-align: center;
+}
+#page_top a:hover {
+  opacity: 0.7;
+}
+
+
+.effect p,
+.effect div {
+  margin: 0;
+  transition: 0.8s;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+/*about*/
+.about-background {
+  background-image: url(images/zarazara.jpg);
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Skills & Tools*/
+.skills-background {
+  background-image: url(images/water.jpg);
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.tools-background {
+  background-image: url(images/wall.jpg);
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+table {
+  margin: auto;
+  margin-bottom: 30px;
+}
+td {
+  border-style: none;
+  padding: 0 10px;
+}
+/*Works*/
+.works-background {
+  background-image: url(images/zarazara.jpg);
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Works.html*/
+.main-works {
+  text-align: center;
+  padding-top: 100px;
+}
+.works-main-content-title {
+  margin: auto;
+  font-family: "Caveat", cursive;
+  padding-bottom: 30px;
+}
+
+.works-contents {
+  text-align: center;
+  color: #333;
+}
+
+.occupations {
+  text-align: left;
+  font-family: "Caveat", cursive;
+  margin: 50px 0 20px 50px;
+  padding-top: 50px;
+}
+.sub-content {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 130px;
+  color: #333;
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(252, 70, 107, 0.8),
+    rgba(63, 94, 251, 0.8)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.works-content-title {
+  font-weight: bold;
+  margin: 0 20px 20px 20px;
+  padding: 0;
+  color: #333;
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(252, 70, 107, 0.8),
+    rgba(63, 94, 251, 0.8)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.workslink {
+  padding: 15px 25px;
+  color: #fff;
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(252, 70, 107, 0.8),
+    rgba(63, 94, 251, 0.8)
+  );
+  margin-bottom: 0;
+  border-radius: 10%;
+  transition: 1s;
+}
+.workslink:hover {
+  border-radius: 0;
+  opacity: 0.7;
+}
+hr {
+  margin: auto;
+  border: none;
+  width: 0%;
+  height: 3px;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    rgba(252, 70, 107, 0.8),
+    rgba(63, 94, 251, 0.8)
+  );
+  background-image: -moz-linear-gradient(
+    -45deg,
+    rgba(252, 70, 107, 0.8),
+    rgba(63, 94, 251, 0.8)
+  );
+  background-image: -ms-linear-gradient(
+    -45deg,
+    rgba(252, 70, 107, 0.8),
+    rgba(63, 94, 251, 0.8)
+  );
+  background-image: -o-linear-gradient(
+    -45deg,
+    rgba(252, 70, 107, 0.8),
+    rgba(63, 94, 251, 0.8)
+  );
+  transition: 2s;
+}
+.works-img {
+  margin-top: 30px;
+}
+
+
+.contact-background {
+  background-repeat: no-repeat;
+  background-image: url(images/dubai.jpg);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+.copyright {
+  bottom: auto;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 901px) {
+  
+  header .humberger-wrap {
+    display: block;
+  }
+
+  
+  header .humberger-wrap {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  
+  header .humberger-wrap [class*="humberger-border"] {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    transition: 0.4s all ease;
+    transform-origin: center center;
+    background: #333;
+  }
+  
+  header .humberger-wrap .humberger-border-1 {
+    top: 20px;
+    right: 0;
+  }
+  
+  header .humberger-wrap .humberger-border-2 {
+    top: 30px;
+    right: 0;
+  }
+  
+  header .humberger-wrap .humberger-border-3 {
+    top: 40px;
+    right: 0;
+  }
+
+  
+  header .humberger-wrap.opened .humberger-border-1 {
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  
+  header .humberger-wrap.opened .humberger-border-2 {
+    top: 30px;
+    transform: rotate(-45deg);
+  }
+  
+  header .humberger-wrap.opened .humberger-border-3 {
+    top: 30px;
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+  
+  header nav {
+    display: none;
+  }
+
+  
+  header.opened {
+    background: linear-gradient(
+      44deg,
+      rgb(252, 70, 107, 0.6),
+      rgb(63, 94, 251, 0.6)
+    );
+    background-size: cover;
+    height: 100vh;
+  }
+
+  header.opened nav {
+    display: block;
+    min-height: 100vh;
+    opacity: 1;
+    top: 60px;
+  }
+
+  header nav ul.header-navigation {
+    flex-flow: column nowrap;
+  }
+
+  header nav ul.header-navigation li a {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .svg-wrapper {
+    position: relative;
+    width: 80%;
+    padding-top: 80%;
+    margin: auto;
+  }
+}
