@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Risa Kataoka</title>
+    <title>Yusuke Aimi</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Caveat rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <div class="main-background">
         <div class="gradient">
-            <!--ハンバーガー3本線-->
-            <div class="humberger-wrap">
-              <div class="humberger-border-1"></div>
-              <div class="humberger-border-2"></div>
-              <div class="humberger-border-3"></div>
-            </div>
-            <!--一般的なヘッダーメニュー-->
+            <!--ヘッダーメニュー-->
             <nav>
               <ul class="header-navigation">
                 <li class="header-navigation">
                   <a href="#about" style="text-decoration: none;"><span>About</span></a>
-                </li>
-                <li class="header-navigation">
-                  <a href="#skills-and-tools" style="text-decoration: none;"><span>Skills & Tools</span></a>
                 </li>
                 <li class="header-navigation">
                   <a href="#works" style="text-decoration: none;"><span>Works</span></a>
@@ -43,12 +35,6 @@
                 </li>
               </ul>
             </nav>
-          <div class="container" style="text-align: center;">
-            <div class="svg-wrapper">
-              
-            </div>
-            <img src="images/web-developer.png" alt="web developer based in tokyo" class="img-fluid">
-          </div>
         </div>
       </div>
     </header>
@@ -56,120 +42,25 @@
       <div class="about-background">
         <div class="gradient">
           <div class="container">
-              <h2 class="content-title" style="padding-top: 13%;">About</h2>
-              <img src="images/self-photo.png" alt="セルフフォト" height="200px" width="200px">
+              <h2 class="content-title" style="padding-top: 8%;">About</h2>
+              <img src="images/self-photo.jpg" alt="プロフィールフォト" height="200px" width="200px">
               <div class="effect">
-                <p class="content">1988.04.18生まれ。Laravelなどを使用したWebエンジニア。<br>
-                  その他、ExcelVBAを使用した業務効率化支援ツールの開発が得意。<br>
-                趣味は海外をぶらぶら。特技はものまね。</p>
+                <p class="content">1996生まれ。現在HTML,CSS,PHPを中心に独学中。<br>
+                    趣味は筋トレ、サッカー観戦。<br>
+                    来年中にベンチプレス100kgをあげられるサーバサイドエンジニアになれるよう頑張っています。</p>
               </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="skills-and-tools">
-      <div class="row">
-        <div class="col-md-6 skills-background" style="padding: 0;">
-          <div class="gradient">
-            <h2 class="content-title">Skills</h2>
-            <div class="effect">
-              <div>
-                <table>
-                  <tr>
-                    <td><i class="fab fa-html5 fa-4x faa-wrench animated"></i></td>
-                    <td>HTML</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-css3-alt fa-4x"></i></td>
-                    <td>CSS</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-js-square  fa-4x"></i></td>
-                    <td>JavaScript</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"><i class="fas fa-star-half"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-php fa-4x"></i></td>
-                    <td>PHP</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fas fa-database fa-4x"></i></td>
-                    <td>SQL</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-windows fa-4x"></i></td>
-                    <td>VBA</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-uniregistry fa-4x"></i></td>
-                    <td>UNIX</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 tools-background" style="padding: 0;">
-          <div class="gradient">
-            <h2 class="content-title">Tools</h2>
-            <div class="effect">
-              <div>
-                <table>
-                  <tr>
-                    <td><i class="fab fa-github fa-4x"></i></td>
-                    <td>GitHub</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star-half"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-adobe fa-4x"></i></td>
-                    <td>Adobe PhotoShop</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"><i class="fas fa-star-half"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-wordpress fa-4x"></i></td>
-                    <td>WordPress</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-windows fa-4x"></i></td>
-                    <td>Excel</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-windows fa-4x"></i></td>
-                    <td>Access</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-google fa-4x"></i></td>
-                    <td>Google Docs</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fab fa-google fa-4x faa-wrench animated"></i></td>
-                    <td>Google Analytics</td>
-                    <td><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section id="works">
       <div class="works-background">
         <div class="gradient">
           <div class="container">
               <h2 class="content-title" style="padding-top: 20%;">Works</h2>
                 <div class="effect">
-                  <p class="content">↓ポートフォリオやディレクターとしての活動内容はこちら↓</p>
+                  <p class="content">↓ポートフォリオはこちら↓</p>
                 </div>
                 <a class="linkbtn" href="works.html" style="text-decoration: none;">more</a>
           </div>
@@ -188,7 +79,7 @@
           </div>
           <div style="margin-top: 130px"></div>
           <div class="copyright">
-            <p>Copyright. Risa Kataoka. 2019 All rights reserved.</p>
+            <p>Copyright. Yusuke Aimi. 2020 All rights reserved.</p>
           </div>
         </div>
       </div>
@@ -199,6 +90,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--js-->
-   <script src="js/script.js"></script>
+   <script src="script.js"></script>
   </body>
 </html>

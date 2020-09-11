@@ -7,7 +7,7 @@ body {
   background-color: #fff;
   font-size: 16px;
   color: #fff;
-  font-family: "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo;
+  font-family: Meiryo;
   margin-top: 0;
 }
 
@@ -83,10 +83,6 @@ header .inner {
   justify-content: center;
 }
 
-header .humberger-wrap {
-  display: none;
-}
-
 header nav {
   position: relative;
 }
@@ -106,7 +102,7 @@ header nav a {
   line-height: 60px;
   display: block;
   height: 60px;
-  padding: 10px 30px;
+  padding: 0px 30px;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
@@ -223,31 +219,6 @@ a:hover {
   text-align: center;
 }
 
-/*Skills & Tools*/
-.skills-background {
-  background-image: url(images/water.jpg);
-  position: relative;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-.tools-background {
-  background-image: url(images/wall.jpg);
-  position: relative;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-table {
-  margin: auto;
-  margin-bottom: 30px;
-}
-td {
-  border-style: none;
-  padding: 0 10px;
-}
 /*Works*/
 .works-background {
   background-image: url(images/zarazara.jpg);
@@ -354,10 +325,9 @@ hr {
   margin-top: 30px;
 }
 
-
 .contact-background {
   background-repeat: no-repeat;
-  background-image: url(images/dubai.jpg);
+  background-image: url(images/contact-background.jpg);
   background-size: cover;
   height: 100vh;
   text-align: center;
@@ -367,70 +337,12 @@ hr {
   text-align: center;
 }
 
-
 @media screen and (max-width: 901px) {
-  
-  header .humberger-wrap {
-    display: block;
-  }
-
-  
-  header .humberger-wrap {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    width: 40px;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  
-  header .humberger-wrap [class*="humberger-border"] {
-    position: absolute;
-    width: 40px;
-    height: 2px;
-    transition: 0.4s all ease;
-    transform-origin: center center;
-    background: #333;
-  }
-  
-  header .humberger-wrap .humberger-border-1 {
-    top: 20px;
-    right: 0;
-  }
-  
-  header .humberger-wrap .humberger-border-2 {
-    top: 30px;
-    right: 0;
-  }
-  
-  header .humberger-wrap .humberger-border-3 {
-    top: 40px;
-    right: 0;
-  }
-
-  
-  header .humberger-wrap.opened .humberger-border-1 {
-    top: 30px;
-    transform: rotate(45deg);
-  }
-  
-  header .humberger-wrap.opened .humberger-border-2 {
-    top: 30px;
-    transform: rotate(-45deg);
-  }
-  
-  header .humberger-wrap.opened .humberger-border-3 {
-    top: 30px;
-    transform: rotate(-45deg);
-    opacity: 0;
-  }
   
   header nav {
     display: none;
   }
 
-  
   header.opened {
     background: linear-gradient(
       44deg,
