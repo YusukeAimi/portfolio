@@ -23,7 +23,7 @@ h5 {
 .main-background {
   background-position: left top;
   background-repeat: no-repeat;
-  background-image: url(images/welcome.jpg);
+  background-image: url(images/welcome-sign.jpg);
   background-size: cover;
   max-height: 100vh;
 }
@@ -216,7 +216,7 @@ a:hover {
 
 /*about*/
 .about-background {
-  background-image: url(images/zarazara.jpg);
+  background-image: url(images/wood.jpg);
   position: relative;
   height: 100%;
   background-position: center;
@@ -226,7 +226,7 @@ a:hover {
 
 /*Works*/
 .works-background {
-  background-image: url(images/zarazara.jpg);
+  background-image: url(images/wood.jpg);
   position: relative;
   height: 100%;
   background-position: center;
@@ -334,7 +334,8 @@ hr {
 .contact-background {
   background-repeat: no-repeat;
   background-image: url(images/contact-background.jpg);
-  background-size: cover;
+  background-size: 100%;
+  background-position: bottom;
   height: 100vh;
   text-align: center;
   position: relative;
