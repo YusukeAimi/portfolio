@@ -335,7 +335,7 @@ hr {
   background-repeat: no-repeat;
   background-image: url(images/contact-background.jpg);
   background-size: 100%;
-  background-position: bottom;
+  /*background-position: bottom;*/
   height: 100vh;
   text-align: center;
   position: relative;
