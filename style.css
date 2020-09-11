@@ -349,7 +349,7 @@ hr {
 @media screen and (max-width: 670px) {
   
   header nav {
-    /*display: none;*/
+    display: none;
   }
 
   header.opened {
