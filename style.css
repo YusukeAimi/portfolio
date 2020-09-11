@@ -84,7 +84,12 @@ header .inner {
 }
 
 header nav {
-  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(45, 128, 96, 0.5);
+  position: fixed;
+  top: 0px;
+  z-index: 10;
 }
 
 header nav,
@@ -99,7 +104,7 @@ header nav li {
 }
 
 header nav a {
-  line-height: 60px;
+  line-height: 50px;
   display: block;
   height: 60px;
   padding: 0px 30px;
@@ -149,7 +154,7 @@ header nav a {
 
 
 .content-title {
-  padding: 80px 0 30px 0;
+  padding: 40px 0 30px 0;
   font-family: "Caveat", cursive;
 }
 .content {
@@ -325,22 +330,26 @@ hr {
   margin-top: 30px;
 }
 
+/*Contact*/
 .contact-background {
   background-repeat: no-repeat;
   background-image: url(images/contact-background.jpg);
   background-size: cover;
   height: 100vh;
   text-align: center;
+  position: relative;
 }
 .copyright {
-  bottom: auto;
+  width: 100%;
   text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (max-width: 670px) {
   
   header nav {
-    display: none;
+    /*display: none;*/
   }
 
   header.opened {
@@ -378,21 +387,4 @@ hr {
     margin: auto;
   }
 
-  .menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    /* displayをnoneに指定してください */
-    display: none;
-  }
-
-  .header-right{
-    display: none;
-  }
-  
-  /* menu-iconクラスのdisplayをblockに指定してください  */
-  .menu-icon{
-    display: block;
-  }
 }
