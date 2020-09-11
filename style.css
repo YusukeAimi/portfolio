@@ -337,7 +337,7 @@ hr {
   text-align: center;
 }
 
-@media screen and (max-width: 901px) {
+@media screen and (max-width: 670px) {
   
   header nav {
     display: none;
@@ -376,5 +376,23 @@ hr {
     width: 80%;
     padding-top: 80%;
     margin: auto;
+  }
+
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* displayをnoneに指定してください */
+    display: none;
+  }
+
+  .header-right{
+    display: none;
+  }
+  
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon{
+    display: block;
   }
 }
