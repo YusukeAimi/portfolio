@@ -21,7 +21,7 @@ h5 {
 }
 
 .main-background {
-  background-position: left top;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url(images/welcome-sign.jpg);
   background-size: cover;
@@ -30,9 +30,9 @@ h5 {
 
 .gradient {
   background: linear-gradient(
-    44deg,
-    rgba(252, 70, 107, 0.6),
-    rgba(63, 94, 251, 0.6)
+    30deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0.5)
   );
   background-size: 400% 400%;
   height: 100vh;
