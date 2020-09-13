@@ -43,14 +43,14 @@ var appear = false;
         appear = true;
         pagetop.stop().animate({
           'right': '0px' //右から0pxの位置に
-        }, 300); //0.3秒かけて現れる
+        }, 500); //0.5秒かけて現れる
       }
     } else {
       if (appear) {
         appear = false;
         pagetop.stop().animate({
-          'right': '-50px' //右から-50pxの位置に
-        }, 300); //0.3秒かけて隠れる
+          'right': '-100px' //右から-100pxの位置に
+        }, 500); //0.5秒かけて隠れる
       }
     }
   });
