@@ -266,8 +266,28 @@ a:hover {
     max-height: 50vh;
   }
 
+  header nav {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+  }
+
+  header nav a {
+    line-height: 40px;
+    font-size: 80%;
+    display: block;
+    height: 40px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
   #page_top i {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-right: 10px;
   }
 
