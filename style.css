@@ -353,7 +353,7 @@ hr {
   
   /*header nav {
     display: none;
-  }*/
+  }
 
   header.opened {
     background: linear-gradient(
@@ -383,7 +383,7 @@ hr {
     padding: 30px;
   }
   
-  /*.svg-wrapper {
+  .svg-wrapper {
     position: relative;
     width: 80%;
     padding-top: 80%;
