@@ -152,6 +152,7 @@ header nav a {
   padding-top: 30px;
   line-height: 250%;
   margin-bottom: 30px;
+  line-height: 150%;
 }
 .linkbtn {
   font-weight: bold;
@@ -286,12 +287,12 @@ a:hover {
     font-weight: bold;
   }
 
-  .content {
+  /*.content {
     padding-top: 30px;
     line-height: 250%;
     margin-bottom: 30px;
     line-height: 2px;
-  }
+  }*/
 
   #page_top i {
     padding-top: 20px;
