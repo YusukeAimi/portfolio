@@ -351,6 +351,11 @@ hr {
 /*スマホ対応*/
 @media screen and (max-width: 670px) {
   
+  #page_top i {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
   /*header nav {
     display: none;
   }
