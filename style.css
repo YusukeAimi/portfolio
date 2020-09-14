@@ -145,7 +145,9 @@ header nav a {
 }*/
 
 .content-title {
-  padding: 30px 0;
+  font-size: 270%;
+  padding-top: 10%;
+  padding-bottom: 10px;
   font-family: "Caveat", cursive;
 }
 .content {
@@ -287,55 +289,14 @@ a:hover {
     font-weight: bold;
   }
 
-  /*.content {
-    padding-top: 30px;
-    line-height: 250%;
-    margin-bottom: 30px;
-    line-height: 2px;
-  }*/
-
   #page_top i {
     padding-top: 20px;
     padding-right: 10px;
   }
 
-  /*header nav {
-    display: none;
+  .content-title {
+    padding-top: 15%;
+    font-family: "Caveat", cursive;
   }
-
-  header.opened {
-    background: linear-gradient(
-      44deg,
-      rgb(252, 70, 107, 0.6),
-      rgb(63, 94, 251, 0.6)
-    );
-    background-size: cover;
-    height: 100vh;
-  }
-
-  header.opened nav {
-    display: block;
-    min-height: 100vh;
-    opacity: 1;
-    top: 60px;
-  }
-
-  header nav ul.header-navigation {
-    flex-flow: column nowrap;
-  }
-
-  header nav ul.header-navigation li a {
-    display: block;
-    height: auto;
-    margin: 0;
-    padding: 30px;
-  }
-  
-  .svg-wrapper {
-    position: relative;
-    width: 80%;
-    padding-top: 80%;
-    margin: auto;
-  }*/
 
 }
