@@ -1,0 +1,285 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  color: #fff;
+  font-family: Meiryo;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.main-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/welcome-sign.jpg);
+  background-size: cover;
+  max-height: 100vh;
+}
+
+.gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(255, 255, 255, 0.4)
+  );
+  background-size: 500% 500%;
+  height: 100vh;
+  animation: gradation 5s ease infinite;
+}
+
+@keyframes gradation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*header*/
+
+header nav {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+
+header nav,
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+header nav li {
+  cursor: pointer;
+}
+
+header nav a {
+  line-height: 50px;
+  display: block;
+  height: 60px;
+  padding: 0px 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.content-title {
+  font-size: 270%;
+  padding-top: 10%;
+  font-family: "Caveat", cursive;
+}
+.content {
+  padding: 30px 0;
+  line-height: 150%;
+}
+.linkbtn {
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: 1s;
+  margin: auto;
+}
+.linkbtn:hover {
+  color: #333;
+  background-color: #fff;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+#page_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#page_top i {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+#page_top a:hover {
+  opacity: 0.6;
+}
+
+.effect p,
+.effect div {
+  margin: 0;
+  transition: 0.8s;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+/*About*/
+.about-background {
+  background-image: url(images/wood.jpg);
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Works*/
+.works-background {
+  background-image: url(images/wood.jpg);
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Works.html*/
+.main-works {
+  text-align: center;
+  padding-top: 100px;
+}
+.works-main-content-title {
+  margin: auto;
+  font-family: "Caveat", cursive;
+  padding-bottom: 30px;
+}
+
+/*Contact*/
+.contact-background {
+  background-repeat: no-repeat;
+  background-image: url(images/contact-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+/*タブレットサイズ以下にした場合*/
+@media screen and (max-width: 901px) {
+  /*3本線の表示*/
+  header .humberger-wrap {
+    display: block;
+  }
+
+  /*3本線の位置*/
+  header .humberger-wrap {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  /*humberger-border1,2,3の線*/
+  header .humberger-wrap [class*="humberger-border"] {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    transition: 0.4s all ease;
+    transform-origin: center center;
+    background: #333;
+  }
+  /*1本目の線*/
+  header .humberger-wrap .humberger-border-1 {
+    top: 20px;
+    right: 0;
+  }
+  /*2本目の線*/
+  header .humberger-wrap .humberger-border-2 {
+    top: 30px;
+    right: 0;
+  }
+  /*3本目の線*/
+  header .humberger-wrap .humberger-border-3 {
+    top: 40px;
+    right: 0;
+  }
+
+  /*開閉ボタンopen時の横線1本目*/
+  header .humberger-wrap.opened .humberger-border-1 {
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  /*開閉ボタンopen時の横線2本目*/
+  header .humberger-wrap.opened .humberger-border-2 {
+    top: 30px;
+    transform: rotate(-45deg);
+  }
+  /*開閉ボタンopen時の横線3本目*/
+  header .humberger-wrap.opened .humberger-border-3 {
+    top: 30px;
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+  /*メニューを非表示*/
+  header nav {
+    display: none;
+  }
+
+  /*open時に一番上のヘッダーの背景色を変化*/
+  header.opened {
+    background: linear-gradient(
+      44deg,
+      rgb(252, 70, 107, 0.6),
+      rgb(63, 94, 251, 0.6)
+    );
+    background-size: cover;
+    height: 100vh;
+  }
+
+  header.opened nav {
+    display: block;
+    min-height: 100vh;
+    opacity: 1;
+    top: 60px;
+  }
+
+  header nav ul.header-navigation {
+    flex-flow: column nowrap;
+  }
+
+  header nav ul.header-navigation li a {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 30px;
+  }
+  /*タイトルロゴ部分*/
+  .svg-wrapper {
+    position: relative;
+    width: 80%;
+    padding-top: 80%; /* SVG高さ / SVG幅 * 100 */
+    margin: auto;
+  }
+}
