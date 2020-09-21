@@ -30,45 +30,21 @@ h5 {
 
 .gradient {
   background: linear-gradient(
-    30deg,
-    rgba(0, 0, 0, 0.6),
-    rgba(255, 255, 255, 0.6)
+    45deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(255, 255, 255, 0.4)
   );
-  background-size: 400% 400%;
+  background-size: 500% 500%;
   height: 100vh;
-
-  /*-webkit-animation: gradation 5s ease infinite;*/
-  /*-moz-animation: gradation 5s ease infinite;*/
   animation: gradation 5s ease infinite;
 }
-/*@-webkit-keyframes gradation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 51%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}*/
-/*@-moz-keyframes gradation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 51%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}*/
+
 @keyframes gradation {
   0% {
     background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 51%;
+    background-position: 100% 50%;
   }
   100% {
     background-position: 0% 50%;
@@ -107,31 +83,7 @@ header nav a {
   font-weight: bold;
 }
 
-/*.svg-wrapper {
-  position: relative;
-  width: 80%;
-  padding-top: 40%; 
-  margin: auto;
-}
-.svg-wrapper svg {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.boel {
-  fill-rule: evenodd;
-  stroke-width: 1px;
-  stroke-dasharray: 1425px;
-  stroke-dashoffset: 1425px;
-  animation: anim 4s ease-in 2s forwards;
-  stroke: transparent;
-  fill: transparent;
-}
-@keyframes anim {
+/*@keyframes anim {
   0% {
     stroke-dashoffset: 1425px;
   }
@@ -147,13 +99,10 @@ header nav a {
 .content-title {
   font-size: 270%;
   padding-top: 10%;
-  padding-bottom: 10px;
   font-family: "Caveat", cursive;
 }
 .content {
-  padding-top: 30px;
-  line-height: 250%;
-  margin-bottom: 30px;
+  padding: 30px 0;
   line-height: 150%;
 }
 .linkbtn {
@@ -214,7 +163,7 @@ a:hover {
 .about-background {
   background-image: url(images/wood.jpg);
   position: relative;
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -224,7 +173,7 @@ a:hover {
 .works-background {
   background-image: url(images/wood.jpg);
   position: relative;
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   text-align: center;
