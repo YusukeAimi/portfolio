@@ -152,25 +152,22 @@ a:hover {
   color: black;
   padding: 50px 100px;
 }
-#works 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0 0 10px 0;
-  padding: 0;
-  display: inline-block;
-  font-weight: bolder;
-}
+
 .works-content-title {
   border-bottom: solid;
   padding-top: 30px;
   font-family: "Caveat", cursive;
+  font-weight: bolder;
 }
 .works-content {
   padding: 20px 0;
   line-height: 150%;
+}
+.works-content h4 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: inline-block;
+  font-weight: bolder;
 }
 
 /*Contact*/
@@ -281,11 +278,39 @@ h5 {
     margin: 0;
     padding: 30px;
   }
-  /*タイトルロゴ部分*/
-  .svg-wrapper {
-    position: relative;
-    width: 80%;
-    padding-top: 80%; /* SVG高さ / SVG幅 * 100 */
-    margin: auto;
+
+  #works {
+    color: black;
+    padding: 50px 10px;
+  }
+
+  header nav {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+  }
+
+  header nav a {
+    line-height: 40px;
+    font-size: 80%;
+    display: block;
+    height: 40px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #page_top i {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  .content-title {
+    padding-top: 18%;
+    font-family: "Caveat", cursive;
   }
 }
