@@ -5,7 +5,8 @@
 
 body {
   background-color: #fff;
-  font-size: 16px;
+  /*font-size: 16px;*/
+
   color: #fff;
   font-family: Meiryo;
   margin-top: 0;
@@ -18,6 +19,7 @@ h4,
 h5 {
   margin: 0 0 10px 0;
   padding: 0;
+  display: inline-block;
 }
 
 .main-background {
@@ -52,6 +54,15 @@ h5 {
 }
 
 /*header*/
+
+.header-background {
+  background-image: url(../images/wood.jpg);
+  position: relative;
+  /*height: 100vh;*/
+  /*background-position: center;*/
+  background-size: cover;
+  text-align: center;
+}
 
 header nav {
   height: 50px;
@@ -136,41 +147,36 @@ a:hover {
   padding-bottom: 30px;
 }
 
-/*About*/
-.about-background {
-  background-image: url(images/wood.jpg);
-  position: relative;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-
 /*Works*/
-.works-background {
-  background-image: url(images/wood.jpg);
-  position: relative;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
+#works {
+  color: black;
+  padding: 50px 100px;
 }
-
-/*Works.html*/
-.main-works {
-  text-align: center;
-  padding-top: 100px;
+#works 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: inline-block;
+  font-weight: bolder;
 }
-.works-main-content-title {
-  margin: auto;
+.works-content-title {
+  border-bottom: solid;
+  padding-top: 30px;
   font-family: "Caveat", cursive;
-  padding-bottom: 30px;
+}
+.works-content {
+  padding: 20px 0;
+  line-height: 150%;
 }
 
 /*Contact*/
 .contact-background {
   background-repeat: no-repeat;
-  background-image: url(images/contact-background.jpg);
+  background-image: url(../images/contact-background.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
