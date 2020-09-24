@@ -207,8 +207,8 @@ a:hover {
   bottom: 0;
 }
 
-/*スマホ対応*/
-@media screen and (max-width: 670px) {
+/*タブレットサイズ以下にした場合*/
+@media screen and (max-width: 901px) {
   
   .main-background {
     background-position: center;
