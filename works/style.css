@@ -190,7 +190,7 @@ a:hover {
 
 .main h2 {
   border-bottom: solid;
-  padding-top: 30px;
+  padding-top: 50px;
   font-family: "Caveat", cursive;
   font-weight: bolder;
 }
@@ -283,17 +283,13 @@ a:hover {
 
   #works {
     color: black;
-    width: 80%;
-    padding: 50px 10px;
+    width: 100%;
+    padding: 50px 15px;
     /*float: left;*/
   }
 
   #tables {
-    color: black;
-    width: 20%;
-    padding: 50px 5px;
-    /*float: left;*/
-    background-color: rgb(200, 200, 200);
+    display: none;
   }
 
 }
