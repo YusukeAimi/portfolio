@@ -177,7 +177,7 @@ a:hover {
 #tables {
   color: black;
   width: 20%;
-  padding: 50px 40px;
+  padding: 50px 50px;
   /*float: left;*/
   background-color: rgb(200, 200, 200);
 }
@@ -222,11 +222,11 @@ a:hover {
   bottom: 0;
 }
 
-.image {
+/*.image {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
-}
+}*/
 
 /*タブレットサイズ以下にした場合*/
 @media screen and (max-width: 901px) {
