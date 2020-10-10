@@ -54,7 +54,7 @@ input[type="submit"]:hover {
   .contact {
     margin: 40px 200px;
     color: black;
-    width: 100vh;
+    width: 100%;
   }
 
   .contact-title {
