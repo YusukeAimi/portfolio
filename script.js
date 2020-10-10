@@ -55,7 +55,7 @@ var appear = false;
     }
   });
   pagetop.click(function () {
-    $('body, html').animate({ scrollTop: 0 }, 800); //0.5秒かけてトップへ戻る
+    $('body, html').animate({ scrollTop: 0 }, 800); //0.8秒かけてトップへ戻る
     return false;
   });
 
