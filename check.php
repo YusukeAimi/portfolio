@@ -144,25 +144,25 @@ if (!empty($_POST)) {
 				<table class="table">
 					<tbody>
 						<tr>
-							<th style="color: black;">お名前</th>
+							<th style="color: black;">・お名前</th>
 							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['name'], ENT_QUOTES)); ?>
         					</td>
 						</tr>
 						<tr>
-							<th style="color: black;">メールアドレス</th>
+							<th style="color: black;">・メールアドレス</th>
 							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['email'], ENT_QUOTES)); ?>
         					</td>
 						</tr>
                         <tr>
-							<th style="color: black;">件名</th>
+							<th style="color: black;">・件名</th>
 							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES)); ?>
         					</td>
 						</tr>
 						<tr>
-							<th style="color: black;">お問い合わせ内容</th>
+							<th style="color: black;">・お問い合わせ内容</th>
 							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)); ?>
         					</td>
