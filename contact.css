@@ -9,7 +9,7 @@
   font-family: "Caveat", cursive;
 }
 
-table {
+tbody {
   position: relative;
   width: 100%;
 }
@@ -80,8 +80,12 @@ input[type="submit"]:hover {
   td {
     padding: 30px;
   }
+  
+  .text {
+    width:100%;
+    }
 
-  input, textarea {
+  textarea {
     width:100%;
     }
 

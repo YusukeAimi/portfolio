@@ -70,12 +70,12 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
         <div class="contact">
             <h2 class="contact-title">お問い合わせ</h2>
 			<form class="mailForm" method="post" action="">
-				<table class="table">
+				<table>
 					<tbody>
 						<tr>
 						    <th><label>お名前<span class="required">※必須</span></label></th>
 							<td>
-                                <input type="text" name="name" value="<?php print(htmlspecialchars($_POST['name'], ENT_QUOTES)); ?>" />
+                                <input class="text" type="text" name="name" value="<?php print(htmlspecialchars($_POST['name'], ENT_QUOTES)); ?>" />
 			                    <?php if ($error['name'] === 'blank'): ?>
 			                        <p class="error">※ニックネームを入力してください</p>
                                 <?php endif; ?>
@@ -84,7 +84,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
 						<tr>
 							<th><label>メールアドレス<span class="required">※必須</span></label></th>
 							<td>
-                                <input type="email" name="email" value="<?php print(htmlspecialchars($_POST['email'], ENT_QUOTES)); ?>">
+                                <input class="text" type="email" name="email" value="<?php print(htmlspecialchars($_POST['email'], ENT_QUOTES)); ?>">
                                 <?php if ($error['email'] === 'blank'): ?>
 	                                <p class="error">※メールアドレスを入力してください</p>
                                 <?php endif; ?>
@@ -93,7 +93,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
                         <tr>
 							<th><label>件名</label></th>
 							<td>
-                                <input type="text" name="title" value="<?php print(htmlspecialchars($_POST['title'], ENT_QUOTES)); ?>">
+                                <input class="text" type="text" name="title" value="<?php print(htmlspecialchars($_POST['title'], ENT_QUOTES)); ?>">
                             </td>
                         </tr>
 						<tr>

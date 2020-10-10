@@ -57,28 +57,10 @@ if (!empty($_POST)) {
       	} else {
       	  echo "メールの送信に失敗しました";
 	 	}
-	}
-	//unset($_SESSION['contact']);
-	//header('Location: thanks.php');
-	//exit();
-	*/
-	/*
-	$request_param = $_POST;
-	mb_language("Japanese");
-    mb_internal_encoding("UTF-8");
-    $to = $_SESSION['contact']['email'];
-    $title = $_SESSION['contact']['title'];
-	$content = $_SESSION['contact']['content'];
-	if($request_param['action'] === 'submit'){
-		if(mb_send_mail($to, $title, $content)){
-    		echo "メールを送信しました";
-    	} else {
-			echo "メールの送信に失敗しました";
-		}
-	};
 	*/
 	
-	/*$to = $_SESSION['contact']['email'];
+	/*
+	$to = $_SESSION['contact']['email'];
 	$subject = "HTML MAIL";
 	$message = "<html><body><h1>This is HTML MAIL</h1></body></html>";
 	$headers = "From: ynwa0310@outlook.jp";

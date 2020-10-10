@@ -98,14 +98,14 @@ echo "メールの送信に失敗しました（トークンエラー）";
     </header>
 
     <section id="thanks">
-      <div class=thanks-background">
+      <div class="thanks-background">
         <div class="gradient">
           <div class="container">
               <h2 class="content-title">Thanks!</h2>
-                <div class="effect">
-                  <p class="content">Thanks!</p>
-                </div>
-                <a class="linkbtn" href="works/works.html" style="text-decoration: none;">more</a>
+                <!--<div class="effect">-->
+                  <p class="content">お問い合わせ、ありがとうございます。</p>
+                <!--</div>-->
+                <a class="linkbtn" href="index.html" style="text-decoration: none;">トップ画面に戻る</a>
           </div>
         </div>
       </div>
