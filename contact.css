@@ -1,11 +1,11 @@
 .contact {
-  position: absolute;
+  /*position: absolute;*/
   margin: 40px 200px;
 }
 
 .contact-title {
   color: black;
-  position: absolute;
+  /*position: absolute;*/
   font-size: 270%;
   padding-top: 5%;
   font-family: "Caveat", cursive;
