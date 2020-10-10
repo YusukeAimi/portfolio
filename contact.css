@@ -1,18 +1,12 @@
 .contact {
-  /*position: absolute;*/
   margin: 40px 200px;
+  color: black;
 }
 
 .contact-title {
-  color: black;
-  /*position: absolute;*/
   font-size: 270%;
   padding-top: 5%;
   font-family: "Caveat", cursive;
-}
-
-.tbody {
-  color: black;
 }
 
 th {
@@ -31,28 +25,24 @@ th span {
 }
 
 .button {
-  position: absolute;
+  text-align:center;
 }
 
 input[type="submit"] {
-  position: absolute;
   display: inline-block;
-  border-radius : 5px;
-  font-size     : 18pt;
-  text-align    : center;
-  cursor        : pointer;
-  padding       : 12px 12px;
-  background    : linear-gradient(0deg, #6896db, #e5f4fc);
-  color         : #ffffff;
-  line-height   : 1em;
-  transition    : .3s;
-  box-shadow    : 6px 6px 3px #666666;
-  /*background-image: linear-gradient(0deg, #68d3db, #e5f4fc);*/
-  border: 1px solid #2c628b;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: linear-gradient(0deg, #4e7bbe, #91abd1);
+  color: #ffffff;
+  box-shadow : 5px 5px 5px #666666;
+  border: 2px solid #666666;
 }
-input[type="button"]:hover {
-  color         : #000066;     /* 背景色     */
-  background    : linear-gradient(180deg, #6896db, #e5f4fc);     /* 文字色     */
+input[type="submit"]:hover {
+  color: #ffffff;
+  background-image: linear-gradient(180deg, #4e7bbe, #91abd1);
 }
 
 .error {
@@ -62,13 +52,11 @@ input[type="button"]:hover {
 @media screen and (max-width: 901px) {
   
   .contact {
-    position: absolute;
     margin: 40px 20px;
   }
   
   .contact-title {
     color: black;
-    position: absolute;
     font-size: 270%;
     padding-top: 5%;
     font-family: "Caveat", cursive;
