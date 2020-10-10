@@ -106,7 +106,7 @@ if (!empty($_POST)) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>お問い合わせ</title>
         <!-- css -->
-        <!--<link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="contact.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
