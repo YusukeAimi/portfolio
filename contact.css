@@ -60,10 +60,10 @@ input[type="button"]:hover {
 
 @media screen and (max-width: 901px) {
   
-  .contact {
+  /*.contact {
     position: absolute;
     margin: 40px 20px;
-  }
+  }*/
   
   .contact-title {
     color: black;
