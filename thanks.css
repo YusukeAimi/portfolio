@@ -20,14 +20,6 @@ h5 {
   padding: 0;
 }
 
-.main-background {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(images/welcome-sign.jpg);
-  background-size: cover;
-  max-height: 100vh;
-}
-
 .gradient {
   background: linear-gradient(
     45deg,
@@ -84,7 +76,7 @@ header nav a {
 }
 
 .content-title {
-  font-size: 300%;
+  font-size: 270%;
   padding-top: 10%;
   font-family: "Caveat", cursive;
 }
@@ -122,17 +114,7 @@ a:hover {
   padding-top: 30px;
   padding-right: 30px;
 }
-/*#page_top a {
-  size: 200%;
-  display: block;
-  background-color: #000000;
-  color: #fff;
-  border-radius: 20px;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  text-align: center;
-}*/
+
 #page_top a:hover {
   opacity: 0.6;
 }
@@ -146,64 +128,17 @@ a:hover {
   padding-bottom: 30px;
 }
 
-/*About*/
-.about-background {
+.thanks-background {
   background-image: url(images/wood.jpg);
   position: relative;
   height: 100vh;
   background-position: center;
   background-size: cover;
   text-align: center;
-}
-
-/*Works*/
-.works-background {
-  background-image: url(images/wood.jpg);
-  position: relative;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-
-/*Works.html*/
-.main-works {
-  text-align: center;
-  padding-top: 100px;
-}
-/*.works-main-content-title {
-  margin: auto;
-  font-family: "Caveat", cursive;
-  padding-bottom: 30px;
-}*/
-
-/*Contact*/
-.contact-background {
-  background-repeat: no-repeat;
-  background-image: url(images/contact-background.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  text-align: center;
-  position: relative;
-}
-.copyright {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
 }
 
 /*タブレットサイズ以下にした場合*/
 @media screen and (max-width: 901px) {
-  
-  .main-background {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(images/welcome-sign.jpg);
-    background-size: cover;
-    max-height: 50vh;
-  }
 
   header nav {
     height: 40px;

@@ -67,8 +67,7 @@ echo "メールの送信に失敗しました（トークンエラー）";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Yusuke Aimi</title>
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="thanks.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
@@ -98,9 +97,19 @@ echo "メールの送信に失敗しました（トークンエラー）";
       </div>
     </header>
 
-    <div class="contact">
-      <h2 class="contact-title">Thanks!</h2>
-    </div>
+    <section id="thanks">
+      <div class=thanks-background">
+        <div class="gradient">
+          <div class="container">
+              <h2 class="content-title">Thanks!</h2>
+                <div class="effect">
+                  <p class="content">Thanks!</p>
+                </div>
+                <a class="linkbtn" href="works/works.html" style="text-decoration: none;">more</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div id="page_top">
       <a href="#"><span style="color: #000000"><span style="font-size: 200%"><i class="fa fa-arrow-circle-up"></i></span></span></a>
