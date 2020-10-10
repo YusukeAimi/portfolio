@@ -31,10 +31,13 @@ th span {
 }
 
 .button {
-  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+input[type="submit"] {
+  display: inline-block;
   border-radius : 5px;
   font-size     : 18pt;
   text-align    : center;
@@ -48,7 +51,7 @@ th span {
   /*background-image: linear-gradient(0deg, #68d3db, #e5f4fc);*/
   border: 1px solid #2c628b;
 }
-.button:hover {
+input[type="button"]:hover {
   color         : #000066;     /* 背景色     */
   background    : linear-gradient(180deg, #68d3db, #e5f4fc);     /* 文字色     */
 }
