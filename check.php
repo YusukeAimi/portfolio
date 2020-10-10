@@ -169,8 +169,8 @@ if (!empty($_POST)) {
 						</tr>
 					</tbody>
 				</table>
-			    <div>
-					<a href="contact.php?action=rewrite">&laquo;&nbsp;書き直す</a> | <input type="submit" value="送信する" class="button"/>
+			    <div class="button">
+					<a href="contact.php?action=rewrite">&laquo;&nbsp;書き直す</a> | <input type="submit" value="送信する" />
 				</div>
 		    </form>
 		</div>

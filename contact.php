@@ -106,8 +106,10 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
                             </td>
                         </tr>
 					</tbody>
-				</table>
-                <input type="submit" value="入力内容を確認する" class="button">    
+                </table>
+                <div>
+                    <input type="submit" value="入力内容を確認する" class="button"/>
+                </div>    
             </form>
 		</div>
     </body>
