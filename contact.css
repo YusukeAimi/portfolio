@@ -31,7 +31,6 @@ th span {
 }
 
 .button {
-  /*
   display       : inline-block;
   border-radius : 5%;
   font-size     : 18pt;
@@ -44,8 +43,6 @@ th span {
   transition    : .3s;
   box-shadow    : 6px 6px 3px #666666;
   border        : 2px solid #000066;
-  */
-  width: 300px;
 }
 .buton:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
