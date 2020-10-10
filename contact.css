@@ -1,13 +1,17 @@
 .contact {
   margin: 40px 200px;
   color: black;
-  position: relative;
 }
 
 .contact-title {
   font-size: 270%;
   padding-top: 5%;
   font-family: "Caveat", cursive;
+}
+
+table {
+  position: relative;
+  width: 100%;
 }
 
 th, td {
@@ -78,7 +82,7 @@ input[type="submit"]:hover {
     padding: 30px;
   }
 
-  textarea {
+  input, textarea {
     width:100%;
     }
 
