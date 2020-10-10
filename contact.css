@@ -9,15 +9,15 @@
   font-family: "Caveat", cursive;
 }
 
-th {
+th, td {
   padding: 30px;
   width: 300px;
 }
 
-td {
+/*td {
 	padding: 20px 20px 18px 24px;
 	font-size: 100%;
-}
+}*/
 
 th span {
 	margin-left: 5px;
@@ -60,6 +60,12 @@ input[type="submit"]:hover {
     font-size: 270%;
     padding-top: 5%;
     font-family: "Caveat", cursive;
+  }
+
+  th, td {
+    padding: 30px;
+    width: 300px;
+    display: block;
   }
 
 }
