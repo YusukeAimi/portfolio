@@ -68,6 +68,7 @@ echo "メールの送信に失敗しました（トークンエラー）";
     <title>Yusuke Aimi</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
@@ -96,8 +97,10 @@ echo "メールの送信に失敗しました（トークンエラー）";
         </div>
       </div>
     </header>
-    
-    <h2 class="content-title">Thanks!</h2>
+
+    <div class="contact">
+            <h2 class="contact-title">Thanks!</h2>
+    </div>
 
     <div id="page_top">
       <a href="#"><span style="color: #000000"><span style="font-size: 200%"><i class="fa fa-arrow-circle-up"></i></span></span></a>

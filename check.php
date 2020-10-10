@@ -7,7 +7,8 @@ if (!isset($_SESSION['contact'])) {
 }
 
 if (!empty($_POST)) {
-
+	header('Location: thanks.php');
+	exit();
 	//$request_param = $_POST;
 	//$request_datetime = date("Y年m月d日 H時i分s秒");
 	//$_SESSION['contact']['date'] = date("Y年m月d日 H時i分s秒");
@@ -76,7 +77,8 @@ if (!empty($_POST)) {
 		}
 	};
 	*/
-	$to = $_SESSION['contact']['email'];
+	
+	/*$to = $_SESSION['contact']['email'];
 	$subject = "HTML MAIL";
 	$message = "<html><body><h1>This is HTML MAIL</h1></body></html>";
 	$headers = "From: ynwa0310@outlook.jp";
@@ -89,7 +91,7 @@ if (!empty($_POST)) {
   	}
   	else {
     	echo "メール送信失敗です";
-  	}
+  	}*/
 }
 
 ?>
@@ -136,39 +138,39 @@ if (!empty($_POST)) {
 		</header>
 		<div class="contact">
 			<h2 class="contact-title">お問い合わせ</h2>
-			<p>記入した内容を確認して、「送信する」ボタンをクリックしてください</p>
+			<p style="color: black;">記入した内容を確認して、「送信する」ボタンをクリックしてください</p>
 			<form class="mailForm" method="post" action="">
 				<input type="hidden" name="action" value="submit" />
 				<table class="table">
 					<tbody>
-						<dl>
-							<dt style="color: black;">お名前</dt>
-							<dd style="color: black;">
+						<tr>
+							<th style="color: black;">お名前</th>
+							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['name'], ENT_QUOTES)); ?>
-        					</dd>
-						</dl>
-						<dl>
-							<dt style="color: black;">メールアドレス</dt>
-							<dd style="color: black;">
+        					</td>
+						</tr>
+						<tr>
+							<th style="color: black;">メールアドレス</th>
+							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['email'], ENT_QUOTES)); ?>
-        					</dd>
-                        </dl>
-                        <dl>
-							<dt style="color: black;">件名</dt>
-							<dd style="color: black;">
+        					</td>
+						</tr>
+                        <tr>
+							<th style="color: black;">件名</th>
+							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES)); ?>
-        					</dd>
-						</dl>
-						<dl>
-							<dt style="color: black;">お問い合わせ内容</dt>
-							<dd style="color: black;">
+        					</td>
+						</tr>
+						<tr>
+							<th style="color: black;">お問い合わせ内容</th>
+							<td style="color: black;">
 								<?php print(htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)); ?>
-        					</dd>
-						</dl>
+        					</td>
+						</tr>
 					</tbody>
 				</table>
 			    <div>
-					<a href="contact.php?action=rewrite">&laquo;&nbsp;書き直す</a> | <input type="submit" value="送信する" />
+					<a href="contact.php?action=rewrite">&laquo;&nbsp;書き直す</a> | <input type="submit" value="送信する" class="button"/>
 				</div>
 		    </form>
 		</div>
