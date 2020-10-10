@@ -1,11 +1,11 @@
 .contact {
-  position: center;
+  position: absolute;
   margin: 40px 200px;
 }
 
 .contact-title {
   color: black;
-  position: center;
+  position: absolute;
   font-size: 270%;
   padding-top: 5%;
   font-family: "Caveat", cursive;
@@ -34,11 +34,6 @@ th span {
   position: absolute;
 }
 
-.aaa{
-  position: absolute;
-  left: 50%;
-}
-
 input[type="submit"] {
   display: inline-block;
   border-radius : 5px;
@@ -61,4 +56,21 @@ input[type="button"]:hover {
 
 .error {
   color: #df497d;
+}
+
+@media screen and (max-width: 901px) {
+  
+  .contact {
+    position: absolute;
+    margin: 40px 20px;
+  }
+  
+  .contact-title {
+    color: black;
+    position: absolute;
+    font-size: 270%;
+    padding-top: 5%;
+    font-family: "Caveat", cursive;
+  }
+
 }
