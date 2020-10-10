@@ -84,13 +84,13 @@ echo "メールの送信に失敗しました（トークンエラー）";
                   <a href="index.html" style="text-decoration: none;"><span>Top</span></a>
                 </li>
                 <li class="header-navigation">
-                  <a href="index.html #about" style="text-decoration: none;"><span>About</span></a>
+                  <a href="index.html#about" style="text-decoration: none;"><span>About</span></a>
                 </li>
                 <li class="header-navigation">
-                  <a href="index.html #works" style="text-decoration: none;"><span>Works</span></a>
+                  <a href="index.html#works" style="text-decoration: none;"><span>Works</span></a>
                 </li>
                 <li class="header-navigation">
-                  <a href="index.html #contact" style="text-decoration: none;"><span>Contact</span></a>
+                  <a href="index.html#contact" style="text-decoration: none;"><span>Contact</span></a>
                 </li>
               </ul>
             </nav>
