@@ -170,7 +170,7 @@ if (!empty($_POST)) {
 					</tbody>
 				</table>
 			    <div class="button">
-					<a href="contact.php?action=rewrite">&laquo;&nbsp;書き直す</a> | <input type="submit" value="送信する" />
+					<a href="contact.php?action=rewrite">&laquo;&nbsp;書き直す</a> | <input type="submit" value="送信する" id="sent" />
 				</div>
 		    </form>
 		</div>

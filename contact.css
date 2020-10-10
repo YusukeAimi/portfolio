@@ -26,23 +26,28 @@ th span {
 
 .button {
   text-align:center;
+  font-size: 20px;
 }
 
 input[type="submit"] {
   display: inline-block;
   border-radius: 5px;
-  font-size: 20px;
   text-align: center;
   cursor: pointer;
-  padding: 12px 12px;
   background: linear-gradient(0deg, #4e7bbe, #91abd1);
   color: #ffffff;
-  box-shadow : 5px 5px 5px #666666;
+  box-shadow : 5px 5px 8px #666666;
   border: 2px solid #666666;
 }
 input[type="submit"]:hover {
   color: #ffffff;
   background-image: linear-gradient(180deg, #4e7bbe, #91abd1);
+}
+#check {
+  padding: 12px 12px;
+}
+#sent {
+  padding: 2px 12px;
 }
 
 .error {

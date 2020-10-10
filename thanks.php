@@ -99,7 +99,7 @@ echo "メールの送信に失敗しました（トークンエラー）";
     </header>
 
     <div class="contact">
-            <h2 class="contact-title">Thanks!</h2>
+      <h2 class="contact-title">Thanks!</h2>
     </div>
 
     <div id="page_top">
