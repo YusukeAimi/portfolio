@@ -70,7 +70,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
         <div class="contact">
             <h2 class="contact-title">お問い合わせ</h2>
 			<form class="mailForm" method="post" action="">
-				<table>
+				<table class="table">
 					<tbody>
 						<tr>
 						    <th><label>お名前<span class="required">※必須</span></label></th>
@@ -84,7 +84,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
 						<tr>
 							<th><label>メールアドレス<span class="required">※必須</span></label></th>
 							<td>
-                                <input class="text" type="email" name="email" value="<?php print(htmlspecialchars($_POST['email'], ENT_QUOTES)); ?>">
+                                <input class="text" type="email" name="email" value="<?php print(htmlspecialchars($_POST['email'], ENT_QUOTES)); ?>" />
                                 <?php if ($error['email'] === 'blank'): ?>
 	                                <p class="error">※メールアドレスを入力してください</p>
                                 <?php endif; ?>
@@ -93,7 +93,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
                         <tr>
 							<th><label>件名</label></th>
 							<td>
-                                <input class="text" type="text" name="title" value="<?php print(htmlspecialchars($_POST['title'], ENT_QUOTES)); ?>">
+                                <input class="text" type="text" name="title" value="<?php print(htmlspecialchars($_POST['title'], ENT_QUOTES)); ?>" />
                             </td>
                         </tr>
 						<tr>
@@ -108,7 +108,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['contact'])) {
 					</tbody>
                 </table>
                 <div class="button">
-                    <input type="submit" value="入力内容を確認する" id="check"/>
+                    <input type="submit" value="入力内容を確認する" id="check" />
                 </div>
             </form>
 		</div>

@@ -24,6 +24,10 @@ th span {
 	color: #df497d;
 }
 
+.text {
+  width:60%;
+}
+
 .button {
   text-align:center;
   font-size: 20px;
@@ -80,13 +84,13 @@ input[type="submit"]:hover {
   td {
     padding: 30px;
   }
-  
+
   .text {
     width:100%;
-    }
+  }
 
   textarea {
     width:100%;
-    }
+  }
 
 }

@@ -124,28 +124,28 @@ if (!empty($_POST)) {
 			<form class="mailForm" method="post" action="">
 				<input type="hidden" name="action" value="submit" />
 				<table class="table">
-					<tbody>
+					<tbody style="color: black;">
 						<tr>
-							<th style="color: black;">・お名前</th>
-							<td style="color: black;">
+							<th>・お名前</th>
+							<td>
 								<?php print(htmlspecialchars($_SESSION['contact']['name'], ENT_QUOTES)); ?>
         					</td>
 						</tr>
 						<tr>
-							<th style="color: black;">・メールアドレス</th>
-							<td style="color: black;">
+							<th>・メールアドレス</th>
+							<td>
 								<?php print(htmlspecialchars($_SESSION['contact']['email'], ENT_QUOTES)); ?>
         					</td>
 						</tr>
                         <tr>
-							<th style="color: black;">・件名</th>
-							<td style="color: black;">
+							<th>・件名</th>
+							<td>
 								<?php print(htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES)); ?>
         					</td>
 						</tr>
 						<tr>
-							<th style="color: black;">・お問い合わせ内容</th>
-							<td style="color: black;">
+							<th>・お問い合わせ内容</th>
+							<td>
 								<?php print(htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)); ?>
         					</td>
 						</tr>
