@@ -35,7 +35,7 @@ if (!empty($_POST)) {
 	mb_language("Japanese");
   	mb_internal_encoding("UTF-8");
 
- 	$to = ekerr310@icloud.com;
+ 	$to = "ekerr310@icloud.com";
   	$title = AAA;
   	$message = BB;
   	$headers = "From: ynwa0310@outlook.jp";
