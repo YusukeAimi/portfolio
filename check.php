@@ -35,9 +35,9 @@ if (!empty($_POST)) {
 	mb_language("Japanese");
   	mb_internal_encoding("UTF-8");
 
- 	$to = htmlspecialchars($_SESSION['contact']['email'], ENT_QUOTES);
-  	$title = htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES);
-  	$message = htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES);
+ 	$to = ekerr310@icloud.com;
+  	$title = AAA;
+  	$message = BB;
   	$headers = "From: ynwa0310@outlook.jp";
 
   	if(mb_send_mail($to, $title, $message, $headers)) {
