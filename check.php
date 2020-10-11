@@ -7,19 +7,7 @@ if (!isset($_SESSION['contact'])) {
 }
 
 if (!empty($_POST)) {
-	header('Location: thanks.php');
-	exit();
-	//$request_param = $_POST;
-	//$request_datetime = date("Y年m月d日 H時i分s秒");
-	//$_SESSION['contact']['date'] = date("Y年m月d日 H時i分s秒");
-
-	//$mailto = $_SESSION['contact']['email'];
-	//お問い合わせを受信するメールアドレス
-	//$to = $_SESSION['contact']['email'];
-	//送信が完了したことを自動送信するメールアドレス
-	//$mailfrom = "ynwa0310@outlook.jp";
-	//$subject = "お問い合わせ、ありがとうございます。";
-	/*
+	
 	//相手への確認用メール
 	$content = "";
 	$content .= $request_param['name']. "様\r\n";
@@ -44,36 +32,22 @@ if (!empty($_POST)) {
 	$content2 .= "お問い合わせ内容　 " . htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)."\r\n";
 	$content2 .= "================================="."\r\n";
 
-	mb_language("ja");
-	mb_internal_encoding("UTF-8");
-	//mail 送信
-	//mb_send_mail(宛先, 件名, メッセージ, ヘッダ)
-	if($request_param['action'] === 'submit'){
-		if(mb_send_mail($to, $title, $content)){
-			echo "メールを送信しました";
-			unset($_SESSION['contact']);
-			//header('Location: thanks.php');
-			exit();
-      	} else {
-      	  echo "メールの送信に失敗しました";
-	 	}
-	*/
-	
-	/*
-	$to = $_SESSION['contact']['email'];
-	$subject = "HTML MAIL";
-	$message = "<html><body><h1>This is HTML MAIL</h1></body></html>";
-	$headers = "From: ynwa0310@outlook.jp";
-	$headers .= "\r\n";
-	$headers .= "Content-type: text/html; charset=UTF-8";
-	mb_send_mail($to, $subject, $message, $headers);
+	mb_language("Japanese");
+  	mb_internal_encoding("UTF-8");
 
-	if(mb_send_mail($to, $title, $message, $headers)) {
-    	echo "メール送信成功です";
+ 	$to = htmlspecialchars($_SESSION['contact']['email'], ENT_QUOTES);
+  	$title = htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES);
+  	$message = htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES);
+  	$headers = "From: ynwa0310@outlook.jp";
+
+  	if(mb_send_mail($to, $title, $message, $headers)) {
+		echo "メール送信成功です";
+		header('Location: thanks.php');
+		exit();
   	}
   	else {
     	echo "メール送信失敗です";
-  	}*/
+  	}
 }
 
 ?>
