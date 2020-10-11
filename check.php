@@ -7,7 +7,7 @@ if (!isset($_SESSION['contact'])) {
 }
 
 if (!empty($_POST)) {
-	
+	/*
 	//相手への確認用メール
 	$content = "";
 	$content .= $request_param['name']. "様\r\n";
@@ -31,17 +31,14 @@ if (!empty($_POST)) {
 	$content2 .= "件名　 　　　　　　" . htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES)."\r\n";
 	$content2 .= "お問い合わせ内容　 " . htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)."\r\n";
 	$content2 .= "================================="."\r\n";
+	*/
+	$to = "ekerr310@icloud.com";
+	$subject = "例の件について";
+	$body = "どうでしょう？";
+	$from = "uouwowtoto@yahoo.co.jp";
 
-	mb_language("Japanese");
-  	mb_internal_encoding("UTF-8");
-
- 	$to = "ekerr310@icloud.com";
-  	$title = AAA;
-  	$message = BB;
-  	$headers = "From: ynwa0310@outlook.jp";
-
-  	if(mb_send_mail($to, $title, $message, $headers)) {
-		echo "メール送信成功です";
+  	if(mb_send_mailmb_send_mail($to,$subject,$body,"From:".$from)) {
+		/*echo "メール送信成功です";*/
 		header('Location: thanks.php');
 		exit();
   	}
