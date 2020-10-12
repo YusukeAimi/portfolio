@@ -7,6 +7,8 @@
         }
     ],
     "require": {
+        "php": "~7.4.8",
+        "ext-mbstring": "*"
         "phpunit/phpunit": "3.7.*"
         "sendgrid/sendgrid": "~7"
     }
