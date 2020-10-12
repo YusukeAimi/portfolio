@@ -32,7 +32,7 @@ if (!empty($_POST)) {
 
 	$sendgrid = new SendGrid(getenv('SENDGRID_USERNAME'), getenv('SENDGRID_PASSWORD'));
 	$email = new SendGrid\Email();
-	$email->addTo('to@exmaple.com')->
+	$email->addTo('ekerr310@icloud.com')->
     		setFrom('from@example.com')->
     		setSubject('件名')->
     		setText('こんにちは！');
