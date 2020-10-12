@@ -32,19 +32,36 @@ if (!empty($_POST)) {
 	$content2 .= "お問い合わせ内容　 " . htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)."\r\n";
 	$content2 .= "================================="."\r\n";
 	*/
+	/*
 	$to = "ekerr310@icloud.com";
 	$subject = "例の件について";
 	$body = "どうでしょう？";
 	$from = "uouwowtoto@yahoo.co.jp";
 
   	if(mb_send_mailmb_send_mail($to,$subject,$body,"From:".$from)) {
-		/*echo "メール送信成功です";*/
+		
 		header('Location: thanks.php');
 		exit();
   	}
   	else {
     	echo "メール送信失敗です";
-  	}
+	}*/
+
+	require 'vendor/autoload.php';
+	$email = new SendGridMailMail();
+	$email->setFrom("ekerr310@icloud.com", "送信者A");
+	$email->setSubject("TestMail漢字");
+	$email->addTo($_SESSION['contact']['email'], "受信者B");
+	$email->addContent("text/plain", "日本語 English");
+	$sendgrid = new SendGrid(getenv('SENDGRID_API_KEY'));
+	try {
+    	$response = $sendgrid->send($email);
+    	print $response->statusCode() . "n";
+    	print_r($response->headers());
+    	print $response->body() . "n";
+	} catch (Exception $e) {
+    	echo 'Caught exception: '. $e->getMessage() ."n";
+	}
 }
 
 ?>

@@ -1,6 +1,13 @@
 {
+    "name": "ynwa0/portfolio",
+    "authors": [
+        {
+            "name": "YusukeAimi",
+            "email": "ynwa0310@outlook.jp"
+        }
+    ],
     "require": {
-        "php": "~7.4.8",
-        "ext-mbstring": "*"
+        "phpunit/phpunit": "3.7.*"
+        "sendgrid/sendgrid": "~7"
     }
 }
