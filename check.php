@@ -62,7 +62,9 @@ if (!empty($_POST)) {
 		header('Location: thanks.php');
 		exit();
 	} catch (Exception $e) {
-    	echo 'Caught exception: '. $e->getMessage() ."n";
+		echo 'Caught exception: '. $e->getMessage() ."n";
+		header('Location: contact.php');
+		exit();
 	}
 }
 
