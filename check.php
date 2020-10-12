@@ -28,7 +28,7 @@ if (!empty($_POST)) {
 	header('Location: thanks.php');
 	exit();
 	*/
-	require __DIR__ . '/../vendor/autoload.php'; // path to vendor/
+	/*require __DIR__ . '/../vendor/autoload.php'; // path to vendor/
 
 	$sendgrid = new SendGrid(getenv('SENDGRID_USERNAME'), getenv('SENDGRID_PASSWORD'));
 	$email = new SendGrid\Email();
@@ -38,6 +38,7 @@ if (!empty($_POST)) {
     		setText('こんにちは！');
 
 	$sendgrid->send($email);
+	*/
 	header('Location: thanks.php');
 	exit();
 	
