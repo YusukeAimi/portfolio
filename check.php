@@ -48,10 +48,10 @@ if (!empty($_POST)) {
 	}*/
 
 	require 'vendor/autoload.php';
-	$email = new SendGridMailMail();
+	$email = new \SendGrid\Mail\Mail();
 	$email->setFrom("ekerr310@icloud.com", "送信者A");
 	$email->setSubject("TestMail漢字");
-	$email->addTo($_SESSION['contact']['email'], "受信者B");
+	$email->addTo("uouwowtot@yahoo.co.jp", "受信者B");
 	$email->addContent("text/plain", "日本語 English");
 	$sendgrid = new SendGrid(getenv('SENDGRID_API_KEY'));
 	try {
