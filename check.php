@@ -58,7 +58,9 @@ if (!empty($_POST)) {
     	$response = $sendgrid->send($email);
     	print $response->statusCode() . "n";
     	print_r($response->headers());
-    	print $response->body() . "n";
+		print $response->body() . "n";
+		header('Location: thanks.php');
+		exit();
 	} catch (Exception $e) {
     	echo 'Caught exception: '. $e->getMessage() ."n";
 	}
