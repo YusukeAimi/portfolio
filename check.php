@@ -8,62 +8,6 @@ if (!isset($_SESSION['contact'])) {
 
 if (!empty($_POST)) {
 	/*
-	//相手への確認用メール
-	$content = "";
-	$content .= $request_param['name']. "様\r\n";
-	$content .= "お問い合わせ、ありがとうございます。\r\n";
-	$content .= "=================================\r\n";
-	$content .= "お問い合わせ日時　 　" . $request_datetime."\r\n";
-	$content .= "お名前　 　　　　　　" . htmlspecialchars($_SESSION['contact']['name'], ENT_QUOTES)."\r\n";
-	$content .= "メールアドレス　 　　" . htmlspecialchars($_SESSION['contact']['email'], ENT_QUOTES)."\r\n";
-	$content .= "件名　 　　　　　　　" . htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES)."\r\n";
-	$content .= "お問い合わせ内容　 　" . htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)."\r\n";
-	$content .= "=================================\r\n";
-
-	//管理者確認用メール
-	$subject2 = "お問い合わせがありました。";
-	$content2 = "";
-	$content2 .= "お問い合わせがありました。\r\n";
-	$content2 .= "=================================\r\n";
-	$content2 .= "お問い合わせ日時   " . $request_datetime."\r\n";
-	$content2 .= "お名前　 　　　　　" . htmlspecialchars($_SESSION['contact']['name'], ENT_QUOTES)."\r\n";
-	$content2 .= "メールアドレス　 　" . htmlspecialchars($_SESSION['contact']['email'], ENT_QUOTES)."\r\n";
-	$content2 .= "件名　 　　　　　　" . htmlspecialchars($_SESSION['contact']['title'], ENT_QUOTES)."\r\n";
-	$content2 .= "お問い合わせ内容　 " . htmlspecialchars($_SESSION['contact']['content'], ENT_QUOTES)."\r\n";
-	$content2 .= "================================="."\r\n";
-	*/
-	/*
-	$to = "ekerr310@icloud.com";
-	$subject = "例の件について";
-	$body = "どうでしょう？";
-	$from = "uouwowtoto@yahoo.co.jp";
-
-  	if(mb_send_mailmb_send_mail($to,$subject,$body,"From:".$from)) {
-		
-		header('Location: thanks.php');
-		exit();
-  	}
-  	else {
-    	echo "メール送信失敗です";
-	}*/
-	/*
-	require 'vendor/autoload.php';
-
-	$from = new SendGrid\Email(null, "test@example.com");
-	$subject = "Hello World from the SendGrid PHP Library!";
-	$to = new SendGrid\Email(null, "ekerr310@icloud.com");
-	$content = new SendGrid\Content("text/plain", "Hello, Email!");
-	$mail = new SendGrid\Mail($from, $subject, $to, $content);
-
-	$apiKey = getenv('SENDGRID_API_KEY');
-	$sg = new \SendGrid($apiKey);
-
-	$response = $sg->client->mail()->send()->post($mail);
-	echo $response->statusCode();
-	echo $response->headers();
-	echo $response->body();
-	*/
-
 	require 'vendor/autoload.php';
 
 	$email = new SendGridMailMail(); 
@@ -83,6 +27,34 @@ if (!empty($_POST)) {
 	}
 	header('Location: thanks.php');
 	exit();
+	*/
+	require 'vendor/autoload.php';
+	$dotenv = new DotenvDotenv(__DIR__);
+	$dotenv->load();
+ 
+	$api_key           = new SendGrid(getenv('SENDGRID_API_KEY'));
+	$from              = $_ENV['FROM'];
+	$tos               = explode(',', $_ENV['TOS']);
+ 
+	$sendgrid = new SendGrid($api_key, array("turn_off_ssl_verification" => true));
+	$email    = new SendGridEmail();
+	$email->setSmtpapiTos($tos)->
+       setFrom($from)->
+       setFromName("送信者名")->
+       setSubject("[sendgrid-php-example] フクロウのお名前は%fullname%さん")->
+       setText("%familyname% さんは何をしていますか？rn 彼は%place%にいます。")->
+       setHtml("<strong> %familyname% さんは何をしていますか？</strong><br />彼は%place%にいます。")->
+       addSubstitution("%fullname%", array("田中 太郎", "佐藤 次郎", "鈴木 三郎"))->
+       addSubstitution("%familyname%", array("田中", "佐藤", "鈴木"))->
+       addSubstitution("%place%", array("%office%", "%home%", "%office%"))->
+       addSection('%office%', '中野')->
+       addSection('%home%', '目黒')->
+       addCategory('category1')->
+       addHeader('X-Sent-Using', 'SendGrid-API')->
+       addAttachment('./gif.gif', 'owl.gif');
+ 
+	$response = $sendgrid->send($email);
+	var_dump($response);
 }
 
 ?>
