@@ -48,24 +48,6 @@ if (!empty($_POST)) {
 	}*/
 	/*
 	require 'vendor/autoload.php';
-	$email = new \SendGrid\Mail\Mail();
-	$email->setFrom("ekerr310@icloud.com", "送信者A");
-	$email->setSubject("TestMail漢字");
-	$email->addTo("uouwowtot@yahoo.co.jp", "受信者B");
-	$email->addContent("text/plain", "日本語 English");
-	$sendgrid = new SendGrid(getenv('SENDGRID_API_KEY'));
-	try {
-    	$response = $sendgrid->send($email);
-    	print $response->statusCode() . "n";
-    	print_r($response->headers());
-		print $response->body() . "n";
-		header('Location: thanks.php');
-		exit();
-	} catch (Exception $e) {
-		echo 'Caught exception: '. $e->getMessage() ."n";
-	}
-	*/
-	require 'vendor/autoload.php';
 
 	$from = new SendGrid\Email(null, "test@example.com");
 	$subject = "Hello World from the SendGrid PHP Library!";
@@ -80,6 +62,26 @@ if (!empty($_POST)) {
 	echo $response->statusCode();
 	echo $response->headers();
 	echo $response->body();
+	*/
+
+	require 'vendor/autoload.php';
+
+	$email = new \SendGrid\Mail\Mail(); 
+	$email->setFrom("ekerr310@icloud.com", "Example User");
+	$email->setSubject("Sending with SendGrid is Fun");
+	$email->addTo("ekerr310@icloud.com", "Example User");
+	$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+	$email->addContent(
+    	"text/html", "<strong>and easy to do anywhere, even with PHP</strong>");
+	$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+	try {
+    	$response = $sendgrid->send($email);
+    	print $response->statusCode() . "\n";
+    	print_r($response->headers());
+    	print $response->body() . "\n";
+	} catch (Exception $e) {
+    	echo 'Caught exception: '. $e->getMessage() ."\n";
+	}
 }
 
 ?>
